@@ -63,3 +63,48 @@ index 1c58642..4037b83 100644
 
      return 0;
  }
+C:\Users\Vijay\Documents\git_practice1>git add .
+
+C:\Users\Vijay\Documents\git_practice1>git commit -m"code modified"
+[main 718e45e] code modified
+ 5 files changed, 232 insertions(+), 6 deletions(-)
+ create mode 100644 "ersVijayDocumentsgit_practice1\357\200\276git status"
+ create mode 100644 git
+ create mode 100644 git -practice_list.txt
+ create mode 100644 ter
+
+C:\Users\Vijay\Documents\git_practice1>git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 3.81 KiB | 1.91 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vijaykumarmadri/git_practice_1.git
+   aa6d3ae..718e45e  main -> main
+C:\Users\Vijay\Documents\git_practice1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git -practice_list.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Vijay\Documents\git_practice1>git log
+commit 718e45e2949603a883d5f985d32db43976fcd487 (HEAD -> main, origin/main)
+Author: vijay kumar <you@example.com>
+Date:   Mon Nov 25 14:40:31 2024 +0530
+
+    code modified
+
+commit aa6d3ae5f3d42ae07a405f06de1dbe372859265f
+Author: vijay kumar <you@example.com>
+Date:   Mon Nov 25 12:43:35 2024 +0530
+
+    hi this is basic c++ code file
+
+C:\Users\Vijay\Documents\git_practice1>
