@@ -1,0 +1,33 @@
+[1mdiff --git a/git_practice.txt b/git_practice.txt[m
+[1mindex 1c58642..4037b83 100644[m
+[1m--- a/git_practice.txt[m
+[1m+++ b/git_practice.txt[m
+[36m@@ -8,17 +8,21 @@[m [mint add(int a,int b){[m
+ int subtract(int a,int b){[m
+     return a-b;[m
+ }[m
+[32m+[m[32m// function name "subtract"for diffrence two integers[m
+[32m+[m[32mint product(int a,int b){[m
+[32m+[m[32m    return a*b;[m
+[32m+[m[32m}[m
+ int main() {[m
+     // declare a and b[m
+     int a;[m
+     int b;[m
+     cin>>a>>b;[m
+[31m-    int result=add(a,b);[m
+[31m-    //print the result[m
+[31m-    cout<<"sum of A and B is :"<<result<<endl;[m
+[31m-    int result1=subtract(a,b);[m
+[31m-   //print the result1[m
+[31m-    cout<<"difference of A and B is :"<<result1<<endl;[m
+[32m+[m[32m    int addresult=add(a,b);[m
+[32m+[m[32m    cout<<"sum of A and B is :"<<addresult<<endl;[m
+[32m+[m[32m    int subResult=subtract(a,b);[m
+[32m+[m[32m    cout<<"difference of A and B is :"<<subResult<<endl;[m
+[32m+[m[32m    int productResult=product(a,b);[m
+[32m+[m[32m    cout<<"product of A and B is :"<<productResult<<endl;[m
+ [m
+     return 0;[m
+ }[m
+\ No newline at end of file[m

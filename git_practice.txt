@@ -8,17 +8,21 @@ int add(int a,int b){
 int subtract(int a,int b){
     return a-b;
 }
+// function name "subtract"for diffrence two integers
+int product(int a,int b){
+    return a*b;
+}
 int main() {
     // declare a and b
     int a;
     int b;
     cin>>a>>b;
-    int result=add(a,b);
-    //print the result
-    cout<<"sum of A and B is :"<<result<<endl;
-    int result1=subtract(a,b);
-   //print the result1
-    cout<<"difference of A and B is :"<<result1<<endl;
+    int addresult=add(a,b);
+    cout<<"sum of A and B is :"<<addresult<<endl;
+    int subResult=subtract(a,b);
+    cout<<"difference of A and B is :"<<subResult<<endl;
+    int productResult=product(a,b);
+    cout<<"product of A and B is :"<<productResult<<endl;
 
     return 0;
 }

@@ -1,0 +1,65 @@
+Microsoft Windows [Version 10.0.19045.5131]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Vijay\Documents\git_practice1>git init
+Initialized empty Git repository in C:/Users/Vijay/Documents/git_practice1/.git/
+
+C:\Users\Vijay\Documents\git_practice1>git add .
+
+C:\Users\Vijay\Documents\git_practice1>git commit -m"hi this is basic c++ code file"
+[master (root-commit) aa6d3ae] hi this is basic c++ code file
+ 1 file changed, 24 insertions(+)
+ create mode 100644 git_practice.txt
+
+C:\Users\Vijay\Documents\git_practice1>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Vijay\Documents\git_practice1>git remote add origin https://github.com/vijaykumarmadri/git_practice_1.git
+
+C:\Users\Vijay\Documents\git_practice1>git branch -M main
+
+C:\Users\Vijay\Documents\git_practice1>git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 471 bytes | 471.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vijaykumarmadri/git_practice_1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\Vijay\Documents\git_practice1>git diff
+diff --git a/git_practice.txt b/git_practice.txt
+index 1c58642..4037b83 100644
+--- a/git_practice.txt
++++ b/git_practice.txt
+diff --git a/git_practice.txt b/git_practice.txt
+index 1c58642..4037b83 100644
+--- a/git_practice.txt
++++ b/git_practice.txt
+@@ -8,17 +8,21 @@ int add(int a,int b){
+ int subtract(int a,int b){
+     return a-b;
+ }
++// function name "subtract"for diffrence two integers
++int product(int a,int b){
++    return a*b;
++}
+ int main() {
+     // declare a and b
+     int a;
+     int b;
+     cin>>a>>b;
+-    int result=add(a,b);
+-    //print the result
+-    cout<<"sum of A and B is :"<<result<<endl;
+-    int result1=subtract(a,b);
+-   //print the result1
+-    cout<<"difference of A and B is :"<<result1<<endl;
++    int addresult=add(a,b);
++    cout<<"sum of A and B is :"<<addresult<<endl;
+
+     return 0;
+ }
